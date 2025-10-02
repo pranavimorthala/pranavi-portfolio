@@ -2,4 +2,4 @@
 pranavi-portfolio
 
 
-https://<pranavimorthala>.github.io/pranavi-portfolio/
+pranavimorthala.github.io/pranavi-portfolio/
