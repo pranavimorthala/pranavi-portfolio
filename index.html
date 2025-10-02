@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pranavi Morthala – Business Analyst Portfolio</title>
+    <meta name="description" content="Portfolio of Pranavi Morthala – Business Analyst (Finance & Tech). Process automation, risk management, regulatory compliance, SQL, Power BI, Tableau, Agile."/>
+    <meta property="og:title" content="Pranavi Morthala – Business Analyst"/>
+    <meta property="og:description" content="Process automation, risk management, regulatory compliance, data analysis."/>
+    <meta property="og:type" content="website"/>
+    <meta name="theme-color" content="#0ea5e9"/>
+
+    <!-- Tailwind (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {extend: {fontFamily: {sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI']} }}
+      }
+    </script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css" />
+
+    <!-- Favicon (text-based) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230ea5e9'/><text x='50' y='58' font-size='52' text-anchor='middle' fill='white' font-family='Arial'>PM</text></svg>">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pranavi Morthala",
+        "jobTitle": "Business Analyst",
+        "email": "mailto:pranavir09@gmail.com",
+        "telephone": "+1 512-766-0986",
+        "address": {"@type":"PostalAddress","addressLocality":"Austin","addressRegion":"TX","addressCountry":"USA"},
+        "sameAs": []
+      }
+    </script>
+
+    <style>
+      /* Smooth fade/slide on reveal */
+      .reveal{opacity:0; transform:translateY(12px); transition:all .6s ease}
+      .reveal.show{opacity:1; transform:none}
+      /* Print-friendly resume section */
+      @media print{ .no-print{ display:none !important } body{ color:#000 } }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-700/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="flex items-center justify-between h-16">
+          <a href="#home" class="font-semibold tracking-tight">PM • Portfolio</a>
+          <nav class="hidden md:flex gap-6 text-sm">
+            <a href="#about" class="hover:text-sky-600">About</a>
+            <a href="#experience" class="hover:text-sky-600">Experience</a>
+            <a href="#projects" class="hover:text-sky-600">Project</a>
+            <a href="#skills" class="hover:text-sky-600">Skills</a>
+            <a href="#education" class="hover:text-sky-600">Education</a>
+            <a href="#contact" class="hover:text-sky-600">Contact</a>
+          </nav>
+          <div class="flex items-center gap-3">
+            <a href="./resume.pdf" class="no-print inline-flex items-center gap-2 rounded-xl px-3.5 py-2 text-sm font-medium bg-sky-600 text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-400" download>
+              <i class="ti ti-download"></i><span>Resume</span>
+            </a>
+            <button id="themeToggle" class="no-print p-2 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" title="Toggle theme">
+              <i class="ti ti-moon-stars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="pt-10 sm:pt-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div class="reveal">
+            <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight tracking-tight">Pranavi Morthala</h1>
+            <p class="mt-3 text-lg sm:text-xl text-slate-600 dark:text-slate-300">Business Analyst • Finance & Technology</p>
+            <p class="mt-6 text-slate-700 dark:text-slate-200">4+ years driving process automation, risk management, and regulatory compliance (SOX, Basel III, AML/KYC). Skilled in requirements, data analysis (SQL, Power BI, Tableau), and Agile delivery to reduce costs and improve decisions.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a href="#contact" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-slate-900 text-white dark:bg-white dark:text-slate-900 hover:opacity-90"><i class="ti ti-send"></i> Contact</a>
+              <a href="mailto:pranavir09@gmail.com" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800"><i class="ti ti-mail"></i> pranavir09@gmail.com</a>
+            </div>
+            <p class="mt-3 text-sm text-slate-500">Austin, Texas • +1 512‑766‑0986</p>
+          </div>
+          <div class="reveal md:justify-self-end">
+            <div class="aspect-square w-56 sm:w-72 rounded-3xl bg-gradient-to-br from-sky-500 to-cyan-400 p-[3px] shadow-xl">
+              <div class="w-full h-full rounded-3xl bg-white dark:bg-slate-900 grid place-items-center">
+                <div class="text-6xl font-black select-none">PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl font-bold">About</h2>
+        <p class="mt-4 reveal max-w-3xl">Business Analyst with hands-on experience partnering with finance, risk, compliance, and IT teams to align business objectives with technology solutions. I design data-driven workflows, build dashboards, write user stories & acceptance criteria, and lead UAT—consistently improving speed, accuracy, and compliance.</p>
+        <ul class="mt-6 reveal grid sm:grid-cols-2 gap-3 text-sm">
+          <li class="flex items-start gap-3"><i class="ti ti-check text-sky-600"></i><span>50+ stakeholder interviews to uncover inefficiencies and define business needs</span></li>
+          <li class="flex items-start gap-3"><i class="ti ti-check text-sky-600"></i><span>100+ user stories; Agile ceremonies for continuous improvement</span></li>
+          <li class="flex items-start gap-3"><i class="ti ti-check text-sky-600"></i><span>Power BI dashboards for real-time risk & revenue insights (+50% decision speed)</span></li>
+          <li class="flex items-start gap-3"><i class="ti ti-check text-sky-600"></i><span>Process re-engineering in loan processing, fraud detection, reconciliation (−20% costs)</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-16 bg-white/70 dark:bg-slate-800/40">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl font-bold">Experience</h2>
+        <div class="mt-8 grid gap-6">
+          <!-- Broadridge -->
+          <article class="reveal p-6 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <h3 class="font-semibold text-lg">Business Analyst — Broadridge</h3>
+              <span class="text-sm text-slate-500">Jul 2022 – Present • Austin, TX</span>
+            </div>
+            <p class="mt-2 text-slate-600 dark:text-slate-300">Enterprise-wide process automation in finance & banking; regulatory alignment; risk & data initiatives.</p>
+            <ul class="mt-3 list-disc pl-5 space-y-1 text-sm">
+              <li>Led 50+ interviews; mapped gaps; proposed automation for improved processes.</li>
+              <li>Wrote 100+ user stories & acceptance criteria aligned to SOX, Basel III, AML/KYC.</li>
+              <li>Ran 10+ re-engineering workshops (loan, fraud, reconciliation) → 20% cost reduction.</li>
+              <li>Built Power BI dashboards for risk & revenue; +50% decision speed.</li>
+              <li>Partnered with finance on multimillion budgets; automated reporting (−40% time, +95% accuracy).</li>
+              <li>Supported migrations for 5,000+ users; faster defect resolution (+35%).</li>
+              <li>Executive reporting on performance, risk, compliance; +25% overall process efficiency.</li>
+            </ul>
+          </article>
+
+          <!-- Accenture -->
+          <article class="reveal p-6 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <h3 class="font-semibold text-lg">Business Analyst — Accenture</h3>
+              <span class="text-sm text-slate-500">Mar 2020 – Jun 2021 • Hyderabad, India</span>
+            </div>
+            <p class="mt-2 text-slate-600 dark:text-slate-300">Continuous improvement across finance operations; workflow automation; compliance and adoption.</p>
+            <ul class="mt-3 list-disc pl-5 space-y-1 text-sm">
+              <li>Lean Six Sigma root-cause analysis → 35% faster processing.</li>
+              <li>Requirements workshops; SOPs for SOX/Basel/AML-KYC compliance.</li>
+              <li>Stakeholder alignment across finance, risk, IT; transparent delivery with Jira workflows.</li>
+              <li>Post-implementation KPI tracking → +25% data accuracy.</li>
+              <li>Change management & enablement (videos, guides) → +40% adoption.</li>
+              <li>Visio process maps; SQL + BI for finance and fraud insights.</li>
+              <li>Partnered with QA for test cases & UAT → −30% post-release issues.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project -->
+    <section id="projects" class="py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl font-bold">Featured Academic Project</h2>
+        <article class="reveal mt-6 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm">
+          <div class="flex items-baseline justify-between flex-wrap gap-2">
+            <h3 class="font-semibold">Loan Approval & Risk Assessment System</h3>
+            <span class="text-xs px-2 py-1 rounded-full bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-200">Compliance • Analytics • Automation</span>
+          </div>
+          <p class="mt-2 text-slate-600 dark:text-slate-300">Streamlined loan evaluation; automated workflows; improved risk accuracy; aligned to Basel III, AML, KYC.</p>
+          <ul class="mt-3 list-disc pl-5 space-y-1 text-sm">
+            <li>Stakeholder interviews; defined decision criteria for approvals.</li>
+            <li>MySQL/PostgreSQL schema for applications, borrowers, risk data.</li>
+            <li>Automated risk workflows → −35% manual processing time.</li>
+            <li>SQL analysis of financial history & credit scores for accuracy.</li>
+            <li>Power BI dashboards for approval rates, default risk, compliance KPIs.</li>
+            <li>UAT test cases; security with encryption; compliance guardrails.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-16 bg-white/70 dark:bg-slate-800/40">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl font-bold">Skills</h2>
+        <div class="mt-6 reveal grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+          <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900">
+            <h4 class="font-semibold mb-2">Business Intelligence & Analytics</h4>
+            <p>Power BI, Tableau, Excel (Advanced)</p>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900">
+            <h4 class="font-semibold mb-2">Databases & Querying</h4>
+            <p>SQL, MS Access</p>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900">
+            <h4 class="font-semibold mb-2">Project & Delivery</h4>
+            <p>Jira, Confluence, Trello, MS Project, Agile/Scrum</p>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900">
+            <h4 class="font-semibold mb-2">Process Modeling</h4>
+            <p>BPMN, Visio; Gap Analysis, Impact Assessment</p>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900">
+            <h4 class="font-semibold mb-2">Programming</h4>
+            <p>Python (data analysis), R (basic)</p>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900">
+            <h4 class="font-semibold mb-2">Compliance & Risk</h4>
+            <p>SOX, Basel III, AML/KYC; Change Mgmt & UAT</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl font-bold">Education</h2>
+        <div class="mt-6 reveal grid gap-4">
+          <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <h3 class="font-semibold">Auburn University at Montgomery</h3>
+              <span class="text-sm text-slate-500">Aug 2021 – Dec 2022</span>
+            </div>
+            <p class="text-sm">Master's in Management Information Systems</p>
+          </div>
+          <div class="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <h3 class="font-semibold">ICFAI University, Hyderabad</h3>
+              <span class="text-sm text-slate-500">Aug 2017 – May 2020</span>
+            </div>
+            <p class="text-sm">Bachelor of Business Administration</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume (embedded preview if resume.pdf exists) -->
+    <section id="resume" class="py-16 bg-white/70 dark:bg-slate-800/40">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="flex items-baseline justify-between">
+          <h2 class="text-2xl font-bold">Resume</h2>
+          <a href="./resume.pdf" download class="no-print inline-flex items-center gap-2 text-sm px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800"><i class="ti ti-download"></i> Download PDF</a>
+        </div>
+        <p class="mt-3 text-sm text-slate-500">Tip: Put a <code>resume.pdf</code> file in the same folder as this page to enable the preview and downloads.</p>
+        <div class="mt-4 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900">
+          <iframe src="./resume.pdf#view=FitH" class="w-full h-[720px]" title="Resume Preview"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl font-bold">Get in touch</h2>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">The fastest way to reach me is email. Use the form below or click the email button.</p>
+        <div class="mt-6 grid lg:grid-cols-2 gap-8">
+          <form id="contactForm" class="reveal space-y-4 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900">
+            <div>
+              <label class="block text-sm font-medium">Your Name</label>
+              <input type="text" id="name" required class="mt-1 w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Your Email</label>
+              <input type="email" id="email" required class="mt-1 w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Message</label>
+              <textarea id="message" required rows="5" class="mt-1 w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-transparent px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"></textarea>
+            </div>
+            <div class="flex gap-3">
+              <button type="submit" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-sky-600 text-white hover:bg-sky-700"><i class="ti ti-mail-forward"></i> Send Email</button>
+              <a href="mailto:pranavir09@gmail.com" class="inline-flex items-center gap-2 rounded-xl px-4 py-2 border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800"><i class="ti ti-mail"></i> Open Mail App</a>
+            </div>
+            <p id="formStatus" class="text-sm text-slate-500"></p>
+          </form>
+          <div class="reveal p-6 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900">
+            <h3 class="font-semibold">Contact Details</h3>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li class="flex items-center gap-2"><i class="ti ti-mail"></i><a class="hover:underline" href="mailto:pranavir09@gmail.com">pranavir09@gmail.com</a></li>
+              <li class="flex items-center gap-2"><i class="ti ti-phone"></i><a class="hover:underline" href="tel:+15127660986">+1 512‑766‑0986</a></li>
+              <li class="flex items-center gap-2"><i class="ti ti-map-pin"></i>Austin, Texas</li>
+            </ul>
+            <div class="mt-6">
+              <h4 class="font-semibold text-sm mb-2">Quick Links</h4>
+              <div class="flex flex-wrap gap-3 text-sm">
+                <a class="px-3 py-1.5 rounded-full border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" href="#experience">Experience</a>
+                <a class="px-3 py-1.5 rounded-full border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" href="#skills">Skills</a>
+                <a class="px-3 py-1.5 rounded-full border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800" href="#resume">Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 dark:border-slate-700 py-10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 text-sm flex flex-wrap items-center justify-between gap-4">
+        <p>© <span id="year"></span> Pranavi Morthala</p>
+        <div class="flex items-center gap-4">
+          <a href="mailto:pranavir09@gmail.com" class="hover:underline">Email</a>
+          <a href="./resume.pdf" download class="hover:underline">Download Resume</a>
+          <a href="#home" class="hover:underline">Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Theme toggle (persist in localStorage)
+      const root = document.documentElement;
+      const themeBtn = document.getElementById('themeToggle');
+      const saved = localStorage.getItem('theme');
+      if(saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        root.classList.add('dark');
+      }
+      themeBtn.addEventListener('click', ()=>{
+        root.classList.toggle('dark');
+        localStorage.setItem('theme', root.classList.contains('dark') ? 'dark':'light');
+      });
+
+      // Reveal on scroll
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target)} })
+      },{threshold:.1});
+      document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+      // Contact form -> mailto link (no backend needed)
+      const form = document.getElementById('contactForm');
+      const status = document.getElementById('formStatus');
+      form.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const subject = encodeURIComponent(`Portfolio contact from ${name}`);
+        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+        const href = `mailto:pranavir09@gmail.com?subject=${subject}&body=${body}`;
+        window.location.href = href;
+        status.textContent = "Opening your email app… If nothing happens, use the 'Open Mail App' button.";
+      });
+
+      // Year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
